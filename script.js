@@ -1,8 +1,8 @@
-// setTimeout(() => {
-// 	const main = document.querySelector('main');
-// 	main.style.opacity = 1;
-// 	main.style.filter = 'blur(0px)';
-// }, 1000);
+setTimeout(() => {
+	const main = document.querySelector('main');
+	main.style.opacity = 1;
+	main.style.filter = 'blur(0px)';
+}, 1000);
 
 const list = document.querySelector('.list');
 const checked = document.querySelector('.list');
@@ -41,16 +41,19 @@ addForm.addEventListener('submit', (e) => {
 	}
 
 	e.target.reset();
+	deleteOnClick();
 });
 
 //delete when click on ico
-const trashBox = document.querySelectorAll('.delete');
-trashBox.forEach((elem, i) => {
-	elem.addEventListener('click', () => {
-		elem.parentElement.remove();
-		toDoList.list.splice(i, 1);
+function deleteOnClick() {
+	const trashBox = document.querySelectorAll('.delete');
+	trashBox.forEach((elem, i) => {
+		elem.addEventListener('click', () => {
+			elem.parentElement.remove();
+			toDoList.list.splice(i, 1);
+		});
 	});
-});
+}
 
 // create check effect
 checked.addEventListener(
@@ -62,6 +65,6 @@ checked.addEventListener(
 	},
 	false
 );
-
+deleteOnClick();
 console.log(list);
 console.log(toDoList.list);
