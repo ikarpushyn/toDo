@@ -6,7 +6,6 @@ setTimeout(() => {
 
 const list = document.querySelector('.list');
 const checked = document.querySelector('.list');
-const closeList = document.getElementsByClassName('close');
 const addForm = document.querySelector('form.input_area');
 const addInput = document.querySelector('.adding__input');
 
@@ -55,7 +54,7 @@ function deleteOnClick() {
 	});
 }
 
-// create check effect
+// create check effect on click
 checked.addEventListener(
 	'click',
 	(e) => {
