@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+	const list = document.querySelector('.list');
+	const checked = document.querySelector('.list');
+	const addForm = document.querySelector('form.input_area');
+	const addInput = document.querySelector('.adding__input');
+
 	setTimeout(() => {
 		const main = document.querySelector('main');
 		main.style.opacity = 1;
 		main.style.filter = 'blur(0px)';
 	}, 1000);
-
-	const list = document.querySelector('.list');
-	const checked = document.querySelector('.list');
-	const addForm = document.querySelector('form.input_area');
-	const addInput = document.querySelector('.adding__input');
 
 	const toDoList = {
 		list: [],
