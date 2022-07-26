@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ToDo list</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<main>
+		<form class="input_area">
+			<h2>My To Do List</h2>
+			<input class="adding__input" type="text" placeholder=" Write here... " />
+			<button>Push</button>
+		</form>
+
+		<ul class="list">
+			<li data-checked="check" class="list_item">
+				Write
+				<div class="delete"></div>
+			</li>
+			<li class="list_item">
+				Your
+				<div class="delete"></div>
+			</li>
+			<li class="list_item">
+				ToDo
+				<div class="delete"></div>
+			</li>
+		</ul>
+	</main>
+</body>
+<script src="js/bundle.js"></script>
+
+</html>
