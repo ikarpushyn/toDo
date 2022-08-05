@@ -51,4 +51,14 @@ function input() {
 	}
 }
 
+function deleteOnClick() {
+	const trashBox = document.querySelectorAll('.delete');
+	trashBox.forEach((elem, i) => {
+		elem.addEventListener('click', () => {
+			elem.parentElement.remove();
+			toDoList.list.splice(i, 1);
+		});
+	});
+}
+deleteOnClick();
 export default input;

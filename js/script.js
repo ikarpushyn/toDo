@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	fadeOut();
 	input();
 	checkedButton();
-	
 
 	// console.log(list);
 	// console.log(toDoList.list);
